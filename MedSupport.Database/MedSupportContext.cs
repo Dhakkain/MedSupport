@@ -1,8 +1,5 @@
 ﻿using MedSupport.Database.Model;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MedSupport.Database
 {

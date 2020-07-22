@@ -1,0 +1,53 @@
+<div mat-dialog-title>
+  <button mat-button (click)="onNoClick()" style="float: right;;">
+    <span class="material-icons">
+      close
+    </span>
+  </button>
+  <h1>Visit details</h1>
+</div>
+<div mat-dialog-content>
+
+
+  <mat-grid-list cols="2" rowHeight="400px">
+    <mat-grid-tile [colspan]="1" [rowspan]='1'>
+      <div class="grid-component">
+        <mat-form-field class="full-width">
+          <mat-label>Date</mat-label>
+          <input matInput type="date" [disabled]="isReadOnly">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Doctor</mat-label>
+          <input matInput [disabled]="isReadOnly">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Specialist</mat-label>
+          <input matInput [disabled]="isReadOnly">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Clinic</mat-label>
+          <input matInput [disabled]="isReadOnly">
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+  
+    <mat-grid-tile [colspan]="1" [rowspan]='1'>
+      <div class="grid-component">
+        <mat-form-field class="full-width">
+          <mat-label>Symptoms</mat-label>
+          <textarea rows="10" matInput placeholder="Symptoms..." [disabled]="isReadOnly"></textarea>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Diagnosis</mat-label>
+          <textarea rows="10" matInput placeholder="Diagnosis..." [disabled]="isReadOnly"></textarea>
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  
+ 
+</div>
+<div mat-dialog-actions>
+  <button mat-button cdkFocusInitial *ngIf="!isReadOnly">Ok</button>
+</div>

@@ -1,0 +1,29 @@
+<mat-grid-list cols="3" rowHeight="300px">
+  <mat-grid-tile [colspan]="1" [rowspan]='1'>
+    <div class="grid-component">
+      <app-patient-profile-basic-data></app-patient-profile-basic-data>
+    </div>
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="1" [rowspan]='1'>
+    <div class="grid-component">
+      <app-patient-address-data></app-patient-address-data>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]='1'>
+    <div class="grid-component">
+      <app-patient-contact-data></app-patient-contact-data>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="3" [rowspan]='1'>
+    <div class="grid-component">
+      <app-patient-visit-data></app-patient-visit-data>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="3" [rowspan]='1'>
+    <div class="grid-component">
+      <app-patient-medicine-data></app-patient-medicine-data>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
